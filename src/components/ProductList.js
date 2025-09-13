@@ -3,13 +3,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../redux/cartSlice';
 
 const products = [
-  { id: 1, name: 'Aloe Vera', price: 150, category: 'Succulents', image:'//www.example.com/path/to/Aloe Vera.jpg' },
-  { id: 2, name: 'Fern', price: 200, category: 'Ferns', image: '//www.example.com/path/to/Fern.jpg' },
-  { id: 3, name: 'Jade Plant', price: 250, category: 'Succulents', image: '//www.example.com/path/to/Jade Plant.jpg' },
-  { id: 4, name: 'Peace Lily', price: 300, category: 'Flowering Plants', image: '//www.example.com/path/to/Peace Lily.jpg' },
-  { id: 5, name: 'Snake Plant', price: 180, category: 'Succulents', image: '//www.example.com/path/to/Snake Plant.jpg' },
-  { id: 6, name: 'Orchid', price: 350, category: 'Flowering Plants', image: '//www.example.com/path/to/Orchid.jpg' },
+  { id: 1, name: 'Aloe Vera', price: 150, category: 'Succulents', image:'/images/aloe-vera.jpg' },
+  { id: 2, name: 'Fern', price: 200, category: 'Ferns', image: '/images/fern.jpg' },
+  { id: 3, name: 'Jade Plant', price: 250, category: 'Succulents', image: '/images/jade-plant.jpg' },
+  { id: 4, name: 'Peace Lily', price: 300, category: 'Flowering Plants', image: '/images/peace-lily.jpg' },
+  { id: 5, name: 'Snake Plant', price: 180, category: 'Succulents', image: '/images/snake-plant.jpg' },
+  { id: 6, name: 'Orchid', price: 350, category: 'Flowering Plants', image: '/images/orchid.jpg' },
 ];
+
 
 function ProductList() {
   const dispatch = useDispatch();
